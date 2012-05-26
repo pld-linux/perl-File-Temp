@@ -13,7 +13,7 @@ Version:	0.22
 Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/T/TJ/TJENNESS/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/File/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a7e93cf2015881ded1f22b5b2d0cb391
 URL:		http://search.cpan.org/dist/File-Temp/
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -59,5 +59,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-%{perl_vendorlib}/File/*.pm
-%{_mandir}/man3/*
+%{perl_vendorlib}/File/Temp.pm
+%{_mandir}/man3/File::Temp.3pm*
