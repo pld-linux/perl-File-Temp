@@ -9,12 +9,12 @@
 Summary:	File::Temp - create name and handle of a temporary file safely
 Summary(pl.UTF-8):	File::Temp - moduł języka Perl tworzący nazwy plików tymczasowych
 Name:		perl-File-Temp
-Version:	0.22
+Version:	0.2303
 Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/File/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a7e93cf2015881ded1f22b5b2d0cb391
+# Source0-md5:	7d207d2172b6da5a0c81565324fa565d
 URL:		http://search.cpan.org/dist/File-Temp/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -58,6 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README
+%doc README
 %{perl_vendorlib}/File/Temp.pm
 %{_mandir}/man3/File::Temp.3pm*
